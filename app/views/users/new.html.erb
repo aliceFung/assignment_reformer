@@ -8,3 +8,19 @@
   <input type="submit" />
   <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
 </form>
+
+
+<hr>
+
+<%= form_tag("/users", :method => "post") do %>
+  <%= label_tag(:username, "Username") %>
+  <%= text_field_tag(:username, "<%=@user.username%>") %>
+
+  <%= label_tag(:email, "Email") %>
+  <%= email_field_tag(:username, "<%=@user.email%>") %>
+
+  <%= label_tag(:password, "Password") %>
+  <%= password_field_tag(:username, "<%=@user.password%>") %>
+
+  <%= submit_tag("Submit") %>
+<%= end %>
