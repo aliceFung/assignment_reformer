@@ -13,6 +13,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+  end
+
+  def edit
+  end
+
 
   def whitelisted_user_params
     params.require(:user).permit(:username, :email, :password)
