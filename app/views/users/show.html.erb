@@ -1,1 +1,6 @@
-<%= render :partial => "user" %>
+<ul>
+  <li><%= @user.username %></li>
+  <li><%= @user.email %></li>
+</ul>
+
+<%= link_to "edit", edit_user_path(@user) %>

@@ -29,12 +29,17 @@
 <hr>
 
 <%= form_for @user do |f| %>
+
+
   <%= f.label :username, "Your name here" %>
   <%= f.text_field :username %>
+
   <%= f.label :email, "Your email" %>
   <%= f.email_field :email, :placeholder => "example@example.com" %>
+
   <%= f.label :password, "Your password" %>
   <%= f.password_field :password %>
+
   <%= f.submit "Submit" %>
 <% end %>
 
