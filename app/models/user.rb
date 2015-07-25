@@ -1,8 +1,7 @@
 class User < ActiveRecord::Base
   validates :username,
             :length => {maximum: 5},
-            :allow_blank => true,
-            :strict => true
+            :allow_blank => true
 
   validates :email,
             :presence => true,
